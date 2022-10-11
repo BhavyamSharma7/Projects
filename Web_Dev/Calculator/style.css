@@ -1,0 +1,82 @@
+body{
+    text-align: center !important;
+}
+
+h1{
+    color: aliceblue;
+    background-color: black;
+    font-size: 2.5rem !important;
+    line-height: 1.5 !important;
+    font-weight: 900 !important;
+    font-family: fantasy;
+    letter-spacing: 5px;
+}
+
+/* code reuse */
+
+.border3px{
+    border: 3.5px solid black;
+}
+
+.border2px{
+    border: 2px solid black;
+}
+
+/* body container of the calculator */
+
+.cal-body{
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: rgb(2, 1, 1);
+    min-width: 25vw !important;
+    max-width: 35vw !important;
+}
+
+/* screen of the calculator */
+
+.disply{
+ display: flex;
+ flex-direction: row; 
+ flex-wrap: wrap;
+ justify-content: flex-end;
+ align-items: flex-end;
+ font-size: 2rem;
+ font-weight: 700;
+ letter-spacing: 1px;
+ overflow-x: hidden;
+ overflow-y: hidden;
+}
+
+.screen{
+    background-color: aliceblue;
+    height: 13vh;
+    width: 100%;
+}
+
+/* buttons of calculator */
+
+.cal-btn:hover{
+    color: aliceblue;
+    transition: all 0.2s;
+    background-color: rgb(105, 105, 140) !important;
+}
+
+.last-btn{
+    background-color: coral !important;
+}
+
+.cal-btn{
+
+    font-size: 1.5rem;
+    font-weight: 750;
+    background-color: azure;
+    height: 6vh;
+}
+
+
+@media (max-width: 1000px){
+    h1{
+        font-size: 1.5rem !important;
+        letter-spacing: 2px;
+    }
+}
