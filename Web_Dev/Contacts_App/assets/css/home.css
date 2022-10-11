@@ -1,0 +1,114 @@
+/* body alignment */
+
+body{
+    background-color: rgb(73, 219, 255);
+    text-align: center;
+}
+
+/* header of the page */
+
+.heading{
+    color: darkslategray;
+    font-family: fantasy;
+}
+
+/* contacts list styling */
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 0% 30% 1% 30%;
+    box-shadow: -2px -2px 2px 0px black;
+    border: 5px solid rgb(45, 3, 145);
+}
+
+.contact-container ul{
+    padding: 0;
+    list-style: none;
+}
+
+.contact .contact-details{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #6f92f9;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    border: 1px solid white; 
+    justify-content: space-between;
+    width: 80%;
+}
+
+.contact-details{
+    padding: 3px 10px;
+    font-weight: 700;
+    font-size: larger;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+.contact-details:hover{
+    background-color: rgb(158, 156, 156);
+}
+
+.contact p{
+    margin: 9px 0px;
+}
+
+/* contact icon */
+
+#contact-img{
+    background-color: #6f92f9;
+}
+
+/* delete-button */
+
+.delete-contact{
+    display: inline-flex;
+    width: 5%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.delete-contact a{
+    box-shadow: 1px 1px 1px 1px lightblue;
+    color: aliceblue;
+    background-color: red;
+}
+
+/* form styling */
+
+form input{
+    height: 4%;
+    font-size: 1rem;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+form button{
+    height: 5vh;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 140, 255);
+    border-radius: 10px;
+    border: 3px solid black;
+
+    color: aliceblue;
+}
+
+/* index that shows the name side and number side... */
+
+.index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 83%;
+    margin-left: 7%;
+}
+
+.index b{
+    font-family: cursive;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "contacts_app",
+  "version": "1.0.0",
+  "description": "A Contacts list app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bhavyam Rai Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "jquery": "^3.6.0",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.2.0",
+    "nodemon": "^2.0.15"
+  }
+}
