@@ -1,0 +1,264 @@
+/* global styling. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: #636e72;
+}
+
+.card{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+p{
+    color: #ccc;
+}
+
+/* styling hte expenses container. */
+
+.expenses{
+    background-color: #2d3436;
+    width: 50rem;
+    margin: 2rem auto;
+    max-width: 95%;
+    padding: 1rem;
+}
+
+/* styling the expense items. */
+.expense-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: #636e72;
+}
+
+.expense-item__description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.expense-item h2{
+    flex: 1;
+    font-size: 1rem;
+    margin: 0 1rem;
+    color: white;
+}
+
+.expense-item__price{
+    background-color: #2c2c54;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+@media(min-width: 500px){
+    .expense-item__description{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .expense-item__description h2{
+        font-size: 1.25rem;
+    }
+
+    .expense-item__price{
+        font-size: 1.25;
+    }
+}
+
+/* styling the expense date. */
+
+.expense-date{
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #ececee;
+    background-color: #2d3436;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.expense-date__month{
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.expense-date__year{
+    font-size: 0.75;
+}
+
+.expense-date__day{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* styling the form button and div for new expense. */
+
+.new-expense{
+    background-color: rgba(44, 44, 84,1.0);
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.new-expense button{
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #6c5ce7;
+    color: white;
+    border-radius: 12px;
+}
+
+.new-expense button:hover,
+.new-expense button:active{
+    background-color: rgba(71, 71, 135,1.0);
+    border-color: #510674;
+}
+
+.new-expense button.alternative{
+    color: #220131;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.new-expense button.alternative:hover,
+.new-expense button.alternative:active{
+    background-color: #ddb3f8;
+}
+
+/* styling the form for expenses list. */
+
+.expenses-list{
+    list-style: none;
+    padding: 0;
+}
+
+.expenses-list__fallback{
+    color: white;
+    text-align: center;
+}
+
+/* styling the form for new expense. */
+
+.new-expense__controls{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.new-expense__control label{
+    display: block;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.new-expense__control input{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+}
+
+.new-expense__actions{
+    text-align: right;
+}
+
+/* styling the filter year div. */
+
+.expenses-filter__control{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.expenses-filter__control label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.expenses-filter__control select{
+    width: 7.1rem;
+    height: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+/* styling the the expense chart. */
+
+.Chart{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e86de;
+    border-radius: 12px;
+    height: 10rem;
+}
+
+.chart-bar{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 1rem;
+    align-items: center;
+}
+
+.chart-bar__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #313131;
+    border-radius: 12px;
+    background-color: #c8d6e5;
+    overflow: hidden;
+}
+
+.chart-bar__fill{
+    background-color: #4826b9;
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+.chart-bar__label{
+    font-weight: bold;
+    font-size: 0.5rem;
+    text-align: center;
+}
