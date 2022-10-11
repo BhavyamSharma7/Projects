@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(24, 21, 35);
+    text-align: center;
+}
+
+h1{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 3% 0% 10%;
+    color: rgb(148, 253, 210);
+}
+
+button{
+    text-align: end;
+    height: 8rem;
+    width: 8rem;
+    margin: 1% 2% 2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+}
+
+.drum{
+    font-family: fantasy;
+    font-size: 4rem;
+    color: crimson;
+}
+
+.drum:hover{
+    opacity: 0.2;
+}
+
+.w{
+    background-image: url("Drum\ Kit\ Starting\ Files/images/tom1.png");
+}
+
+.a{
+    background-image: url("Drum\ Kit\ Starting\ Files/images/tom2.png");
+}
+
+.s{
+    background-image: url("Drum\ Kit\ Starting\ Files/images/tom3.png");
+}
+
+.d{
+    background-image: url("Drum\ Kit\ Starting\ Files/images/tom4.png");
+}
+
+.j{
+    background-image: url("Drum\ Kit\ Starting\ Files/images/snare.png");
+}
+
+.k{
+    background-image: url("Drum\ Kit\ Starting\ Files/images/crash.png");
+}
+
+.l{
+    background-image: url("Drum\ Kit\ Starting\ Files/images/kick.png");
+}
