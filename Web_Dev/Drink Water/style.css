@@ -1,0 +1,55 @@
+body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(65, 124, 234);
+}
+
+.heading{
+    color: azure;
+    margin: 1%;
+}
+
+/* display type flex */
+
+.flex{
+    display: flex;
+}
+
+
+
+/* Containers of the app */
+
+.main-container{
+    height: 15rem;
+    width: 6.5rem;
+    margin-bottom: 1%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container{
+    background-color: aliceblue;
+    color: rgb(49, 107, 216);
+    border: 3px solid rgb(13, 13, 185);
+
+}
+
+.small-container{
+    align-items: center;
+    height: 5.5rem;
+    width: 2.5rem;
+    margin: 2%;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    text-align: center;
+}
+
+/* the sub containers div */
+
+.subContainers{
+    flex-wrap: wrap;
+    width: 16rem;
+    justify-content: space-around;
+}

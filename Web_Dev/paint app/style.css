@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* canvas customization */
+
+#canvas{
+    background-color: aliceblue;
+    height: 650px;
+    width: 100%;
+    border: 3px solid steelblue;
+}
+
+
+/* toolbox design */
+
+.toolbox{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(54, 99, 137);
+    width: 96%;
+    padding: 1rem;
+}
+
+.toolbox > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    font-size: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0% 1%;
+}
+
+.toolbox > *:last-child{
+    margin-left: auto;
+}
+
+
+/* options in toolbox customization */
+
+span{
+    font-size: 2rem !important;
+    font-family: fantasy;
+    color: tomato;
+}
+
+button{
+    font-family: fantasy;
+    color: tomato;
+    border-radius: 7px;
+}
+
+button:hover{
+    box-shadow: 0px 2px 2px 2px rgb(53, 53, 53);
+}
+
+input{
+    border-radius: 7px;
+}

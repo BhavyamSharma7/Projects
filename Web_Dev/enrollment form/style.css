@@ -1,0 +1,363 @@
+/* header tag styling */
+
+#header {
+  text-align: center;
+  background-color: rgb(45, 207, 153);
+  color: white;
+  font-weight: 700;
+  padding: 7px;
+}
+
+/* footer tag styling */
+.footer {
+  position: relative;
+  margin-top: 82px;
+  width: 100%;
+  background-color: rgb(45, 207, 153);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+/* right box styling e.i enrolled students */
+.display-heading {
+  text-align: center;
+  font-weight: 650;
+  font-size: 20px;
+}
+
+/* middle div e.i which contain form and enrolled students */
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* left box styling e.i form,input details */
+
+#col1 {
+  border-right: 2px solid rgb(45, 207, 153);
+  margin-top: 15px;
+}
+
+/* input,error tag,div styling*/
+
+.col-sm-10 {
+  position: relative;
+  width: 60%;
+}
+
+.form-control {
+  width: 80%;
+  left: 0;
+  border-radius: 8px;
+  border: 0.7px solid;
+}
+
+#skillerror {
+  margin-left: 3px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+.col {
+  display: flexbox;
+  flex-direction: column;
+}
+
+.col-sm-2,
+col-form-label {
+  width: 23%;
+}
+
+.userform {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#namediv {
+  margin-top: 10px;
+}
+
+/* checkbox styling */
+
+.form-check-form-check-inline {
+  display: inline;
+  margin-right: 10px;
+  margin-left: 6px;
+}
+
+/* form buttons styling */
+
+.button-group {
+  margin-top: 20px;
+}
+
+#btn-clear {
+  margin-left: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* table and inside elements styling */
+
+#col2 {
+  margin-left: 20%;
+  padding-bottom: 40px;
+}
+
+#table {
+  margin: auto;
+}
+
+
+table,
+th,
+td {
+  border: 2px solid rgb(150, 170, 36);
+  border-collapse: collapse;
+}
+
+th {
+  background-color: rgb(157, 185, 31);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  
+}
+
+#tablebody{
+  display:flex;
+}
+
+.cell {
+  background-color: rgb(245, 243, 243);
+  color: black;
+  font-weight: normal;
+}
+
+.oddCell {
+  background-color: rgb(232, 236, 191);
+  color: black;
+  font-weight: normal;
+}
+
+#evenCell,
+#evenCellImage {
+  background-color: rgb(232, 236, 191);
+  color: black;
+  font-weight: normal;
+}
+
+.innerCell {
+  padding-left: 6px;
+  overflow-wrap: break-word;
+  width: 90%;
+}
+
+#innerName,
+#innerName1 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.descriptionHead {
+  width: 70%;
+}
+
+
+#innerSkill,
+#innerSkill1 {
+  margin-bottom: 10px;
+}
+
+/* image styling */
+
+.image {
+  height: 100%;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* animation */
+
+.fadeIn {
+  animation: fadeIn 20s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* break tags */
+
+#break5,
+#break4,
+#break3,
+#break2 {
+  display: none;
+}
+
+/* media queries i.e to make responsive */
+
+@media (max-width: 992px) {
+  .col-sm-2,
+  col-form-label {
+    width: 30%;
+  }
+  #break5 {
+    display: inline;
+  }
+  #col2 {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 348px) {
+  #break3 {
+    display: inline;
+  }
+  #beak4 {
+    display: none;
+  }
+  #break5 {
+    display: none;
+  }
+
+  #btn-clear {
+    margin-left: 5%;
+  }
+  #col2 {
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .form-control {
+    width: 90%;
+  }
+  #col1 {
+    border-bottom: 2px solid rgb(45, 207, 153);
+    border-right: none;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .button-group {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .button-group {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #col2 {
+    margin-top: 30px;
+    left: 0;
+    margin-right: 2%;
+  }
+  #col1 {
+    border-bottom: 2px solid rgb(45, 207, 153);
+    border-right: none;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .container {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 253px) {
+  #break5,#break4{
+    display: inline;
+  }
+
+  #inlineCheckbox3{
+    margin-left:30%;
+  }
+
+}
+
+@media (max-width: 348px) and (min-width: 280px) {
+  #col2 {
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #col1 {
+    border-bottom: 2px solid rgb(45, 207, 153);
+    border-right: none;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .button-group {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+/* ipad air */
+
+@media (width: 820px) and (height: 1180px) {
+  .footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+/* ipad mini */
+@media (width: 768px) and (height: 1024px) {
+  .footer {
+    bottom: 0;
+    position: relative;
+  }
+}
+
+/* surface pro7 */
+
+@media (width: 912px) and (height: 1368px) {
+  .footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+/* nest hub max */
+
+@media (width: 1280px) and (height: 800px) {
+  .footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
